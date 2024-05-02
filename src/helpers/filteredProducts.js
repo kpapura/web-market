@@ -7,18 +7,26 @@ export const filteredProducts = (filter, products, allProducts) => {
   }
 
   let filteredAndSorted = allProducts.filter(({ name, category }) => {
-    const filteredByCategory = filter.filterByCategory ? filter.filterByCategory === category : category;
-    const handleSearch = filter.searchValue ? name.toLowerCase().includes(filter.searchValue.toLowerCase()) : name;
+    const filteredByCategory = filter.filterByCategory
+      ? filter.filterByCategory === category
+      : category;
+    const handleSearch = filter.searchValue
+      ? name.toLowerCase().includes(filter.searchValue.toLowerCase())
+      : name;
 
     return filteredByCategory && handleSearch;
   });
 
   if (filter.sortByPrice === 'Price Low to High') {
-    filteredAndSorted = sortProductsByAsc(filteredAndSorted.length>10 ? products : filteredAndSorted);
+    filteredAndSorted = sortProductsByAsc(
+      filteredAndSorted.length > 10 ? products : filteredAndSorted
+    );
   } else if (filter.sortByPrice === 'Price High to Low') {
-    filteredAndSorted = sortProductsByDesc(filteredAndSorted.length>10 ? products : filteredAndSorted);
+    filteredAndSorted = sortProductsByDesc(
+      filteredAndSorted.length > 10 ? products : filteredAndSorted
+    );
   }
-    return filteredAndSorted;
+  return filteredAndSorted;
 };
 
 const sortProductsByAsc = products => {
@@ -27,4 +35,3 @@ const sortProductsByAsc = products => {
 const sortProductsByDesc = products => {
   return products.slice().sort((a, b) => b.price - a.price);
 };
-
