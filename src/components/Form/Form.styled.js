@@ -36,6 +36,10 @@ export const StyledButton = styled.button`
     rgb(112 0 255 / 82%)
   );
 
+    @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
+  
   &:hover {
     background-image: linear-gradient(
       to left,
