@@ -28,12 +28,12 @@ export const ProductItem = ( {product} ) => {
     
   return (
       <StyledItem>
-          <button onClick={learnMore}><IoMdInformationCircleOutline /></button>
-    <a href="#" onClick={learnMore}>
+    <button onClick={learnMore}>
+       <IoMdInformationCircleOutline />
       <img src={image} alt={image} />
       <StyledName>{name}</StyledName>
       <StyledPrice>{price} UAN</StyledPrice>          
-    </a>
+    </button>
     {isOpen && (
         <Modal closeModal={toggle}>
         <DetailsForm toggle={toggle} product={product} />

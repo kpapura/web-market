@@ -28,7 +28,7 @@ gap: 5px;
       box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.5);
       transition: box-shadow 0.3s ease;
     }
-& > a {
+& > button {
     display: block;
     text-align: center;
     position: relative; 
@@ -36,9 +36,12 @@ gap: 5px;
     color: inherit; 
     width: 100%; 
     height: 100%; 
+    background-color:transparent;
+    border-style: none;
+    cursor: pointer;
 }
 
-&> a> img{
+&> button > img{
     height: 150px;
     width: 120px;
     border-radius: 15px;
@@ -53,10 +56,10 @@ gap: 5px;
   height: 250px;
 }
 }
-&>button{
+&>button>svg{
     position: absolute;
-    left: 112px;
-    top: 5px;
+    left: 113px;
+    top: -5px;
     z-index: 10;
     background-color: white;
     width: 23px;
@@ -67,33 +70,20 @@ gap: 5px;
     transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
     
     @media screen and (min-width: 768px) {
-    left: 209px;
-    top: 5px;
+    left: 214px;
+    top: -11px;
     width: 35px;
     height: 35px;
     border-radius: 17px;
 }
     @media screen and (min-width: 1280px) {
     left: 250px;
-    top: 4px;
+    top: -11px;
     width: 45px;
     height: 45px;
     border-radius: 20px;
 
 }
-    &>svg{
-        width: 17px;
-        height: 17px;
-    
-    @media screen and (min-width: 768px) {
-    width: 25px;
-    height: 25px;
-}
-    @media screen and (min-width: 1280px) {
-    width: 35px;
-    height: 35px;
-}
-    }
     &:hover{
         cursor: pointer;
         transform: scale(1.1);
