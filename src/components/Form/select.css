@@ -1,0 +1,109 @@
+.react-select-sortByPrice {
+    z-index: 999 !important;
+    margin-top: 3px;
+}
+.react-select-filterByCategory{
+    margin-top: 3px;
+}
+.react-select-filterByCategory .react-select__control {
+    height: 20px !important;
+    width: 130px !important;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px lightgray !important;
+    
+    @media screen and (min-width: 768px) {
+    width: 169px !important;        
+}
+  @media screen and (min-width: 1280px) {
+      width: 250px !important;
+  }
+}
+.react-select-filterByCategory .react-select__control:hover{
+    box-shadow: 0px 10px 35px -2px rgba(0, 0, 0, 0.5) !important;
+    transition: box-shadow 0.3s ease !important;
+}
+.react-select-sortByPrice .react-select__control:hover {
+    box-shadow: 0px 10px 35px -2px rgba(0, 0, 0, 0.5) !important;
+    transition: box-shadow 0.3s ease !important;
+}
+.react-select-sortByPrice .react-select__control {
+    height: 20px !important;
+    width: 150px !important;
+    border-style: none;
+    box-shadow: 0 0 10px 2px lightgray !important;
+    cursor: pointer;
+    
+    @media screen and (min-width: 768px) {
+    width: 169px !important;        
+}
+  @media screen and (min-width: 1280px) {
+      width: 250px !important;
+  }
+}
+
+.react_select-sortByPrice .react-select__menu {
+    z-index: 999 !important;
+}
+
+.react-select__control {
+    color: rgb(18, 20, 23) !important;
+    position: relative !important;
+    min-height: 35px !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+
+.react-select__menu {
+    position: absolute !important;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(18, 20, 23, 0.2) !important;
+    background-color: rgb(255, 255, 255) !important;
+    z-index: 9999 !important;
+    border: 1px solid rgba(18, 20, 23, 0.05) !important;
+}
+
+.react-select__option {
+    background-color: transparent !important;
+    color: rgba(18, 20, 23, 0.2) !important;
+}
+
+.react-select__option--is-focused {
+    color: rgb(18, 20, 23) !important;
+}
+
+.react-select__control .react-select__placeholder {
+    color: rgb(18, 20, 23) !important;
+    font-size: 12px !important;
+}
+
+.react-select__value-container {
+    height: 20px !important;
+    padding: 3px 5px !important;
+}
+
+.react-select__input-container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.react-select__single-value {
+    color: rgb(18, 20, 23) !important;
+    font-size: 12px !important;
+}
+
+.react-select__indicator-separator {
+    width: 0px !important;
+}
+
+.react-select__dropdown-indicator {
+    color: rgb(18, 20, 23) !important;
+    height: 20px !important;
+    padding: 0px 5px !important;
+}
+
+.react-select__indicators{
+    height: 20px;
+    padding-top: 20px;
+}
