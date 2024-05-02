@@ -4,14 +4,14 @@ export const StyledList = styled.div`
   display: flex;
   list-style: none;
   flex-direction: row;
-  align-items: center;
+  align-items: center;    
+  justify-content: center;
   max-width: 320px;
   flex-wrap: wrap;
   gap: 20px;
   padding-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    justify-content: center;
     max-width: 550px;
   }
   @media screen and (min-width: 1280px) {
@@ -56,3 +56,4 @@ export const SearchButton = styled.button`
     font-size: 14px;
   }
 `;
+

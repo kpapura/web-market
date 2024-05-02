@@ -9,6 +9,7 @@ import { filteredProducts } from 'helpers/filteredProducts';
 
 import { SearchButton, StyledList } from './ProductsList.styled';
 import { ScrollToTopButton } from 'components/ScrollToTopButton/ScrollToTopButton';
+import { LiaCartPlusSolid } from "react-icons/lia";
 
 export const ProductsList = () => {
   const dispatch = useDispatch();
@@ -32,8 +33,15 @@ export const ProductsList = () => {
   }, [filter, products, allProducts]);
 
   return (
-    <div>
+    <div style={{width:"100%"}}>
       <StyledList>
+        {!filteredList.length &&
+          <>
+          <h3>No available products</h3>
+          <LiaCartPlusSolid style={{width:"50px", height:"50px"}} />
+          </>
+        }
+
         {filteredList?.map(item => {
           return <ProductItem key={item.id} product={item} />;
         })}
