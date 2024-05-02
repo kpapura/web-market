@@ -1,112 +1,58 @@
-# React homework template
+# Web Market application
+[Live page](https://kpapura.github.io/web-market/)
 
-Цей проект був створений за допомогою
-[Create React App](https://github.com/facebook/create-react-app). Для знайомства
-і налаштування додаткових можливостей
-[звернися до документації](https://facebook.github.io/create-react-app/docs/getting-started).
+_Role: developer_
 
-## Створення репозиторію за шаблоном
+_Individual project_
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення репозиторію
-свого проєкта. Для цього натисни на кнопку `«Use this template»` і вибери опцію
-`«Create a new repository»`, як показано на зображенні.
+This website serves as a platform for online shopping. It allows users to explore available products, filter them based on various criteria such as category and sort by price, also they can get more info by clicking on the selected product. It simplifies the process of finding products. It consists of three main pages:
+* _Main page_: displays a list of available products. Initially, 10 advertisements are shown, and additional ones can be loaded by clicking the "Load more" button. Users can filter advertisements by category, price, and search by themselves using a search input. Each advertisement card includes detailed information about the selected product by clicking the icon on each card or card itself. Clicking on the icon opens a modal window with detailed information about the product. Additionally, there is a "Scroll to Top" button that returns users to the top of the page. 
+---
+## Technical Specifications
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+### Frontend:
+- Developed using React.js with React Router for routing.
+- State management is handled using Redux.
+- Axios library is used for making API requests.
+- Semantic and valid HTML markup with responsive design.
+- Styled with styled-components.
+- Loader component is displayed while asynchronous data is being fetched. It also responds to changes in the Redux store.
 
-На наступному кроці відкриється сторінка створення нового репозиторію. Заповни поле
-його імені, переконайся що репозиторій публічний, після чого натисни кнопку
-`«Create repository from template»`.
+### Backend:
+- Backend is implemented using mockapi.io service.
+- Products resource is created with the following fields: id, name, price, image and desc.
+- Pagination is implemented on the backend.
+- Filtering options are available for product category, price range and search field.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+### Additional Features:
+- Dropdown for selecting product category.
+- Dropdown for selecting price range.
+- Input field to search by entering the searching product's name.
+---
 
-Після того як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як
-показано на зображенні.
+### Technologies
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+This application has the following technologies:
 
-Проскроливши сторінку до самого кінця, у секції `«Workflow permissions»` вибери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це
-необхідно для автоматизації процесу деплою проєкту.
+- __HTML__ - a markup language for creating web pages
+- __CSS__ - a stylesheet language for styling web pages
+- __styled-components__ - a library that allows to write CSS in JS while building custom components in React.js.  
+- __react__ - a library for web and native user interfaces
+- __redux__ - a library that provides a structured and predictable way to manage the state of an application
+- __react-dom__ - a library for working with the DOM in React
+- __redux-toolkit__ - a library for working with global state of app
+- __redux-persist__ - a state management tool that allows the state in a Redux store to persist across browser and app sessions
+- __axios__ - a library for making HTTP requests
+- __react router__ - a JavaScript framework that lets handle client and server-side routing in React applications
+- __react-select__ - a library component used for dynamic form input or as a select menu.
+- __react-icons__ - a library of popular icons
+- __react-hook-form__ - a library that helps to manage complex forms
+- __react-toastify__ - a library for adding toast notifications to the React application
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
-
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів і папок
-репозиторію-шаблону. Далі працюй із ним як із будь-яким іншим особистим репозиторієм,
-клонуй його собі на комп'ютер, пиши код, роби комміти і відправляй їх на
-GitHub.
-
-## Підготовка до роботи
-
-1. Переконайся що на комп'ютері встановлено LTS-версія Node.js.
-   [Завантаж і встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проєкту командою `npm install`.
-3. Запусти режим розробки, виконавши команду `npm start`.
-4. Перейди в браузері за адресою [http://localhost:3000](http://localhost:3000).
-   Ця сторінка буде автоматично перезавантажуватися після збереження змін у файлах проєкту.
-
-## Деплой
-
-Продакшн версія проєкту буде автоматично проходити лінтинг, збиратися і
-деплоїтися на GitHub Pages, у гілку `gh-pages`, щоразу, коли оновлюється
-гілка `main`. Наприклад, після прямого пушу або прийнятого пул-реквесту. Для цього
-необхідно у файлі `package.json` відредагувати поле `homepage`, замінивши
-`your_username` і `your_repo_name` на свої, і відправити зміни на GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
-
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) і
-виставити роздачу продакшн-версії файлів із папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Статус деплоя
-
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
-
-- **Жовтий колір** - виконується збірка і деплой проєкту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час лінтингу, сборки або деплою сталася помилка.
-
-Детальнішу інформацію про статус можна подивитися, клікнувши на іконку, і
-у вікні, що випадає, перейти за посиланням `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Жива сторінка
-
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися
-за адресою, вказаною у відредагованій властивості `homepage`. Наприклад, ось
-посилання на живу версію для цього репозиторію
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Якщо відкривається порожня сторінка, переконайся, що у вкладці `Console` немає помилок
-пов'язаних із неправильними шляхами до CSS і JS файлів проєкту (**404**). Швидше 
-за все у тебе неправильне значення властивості `homepage` у файлі `package.json`.
-
-### Маршрутизація
-
-Якщо додаток використовує бібліотеку `react-router-dom` для маршрутизації,
-необхідно додатково налаштувати компонент `<BrowserRouter>`, передавши у пропе
-`basename` точну назву твого репозиторію. Слеш на початку рядка обов'язковий.
-
-```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
-```
-
-## Як це працює
-
-![How it works](./assets/how-it-works.png)
-
-1. Після кожного пушу в гілку `main` GitHub-репозиторія, запускається спеціальний
-   скрипт (GitHub Action) з файла `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується і
-   проходить лінтинг і збірку перед деплоєм.
-3. Якщо всі кроки пройшли успішно, зібрана продакшн-версія файлів проєкту
-   відправляється в гілку `gh-pages`. В іншому випадку, в лозі виконання
-   скрипта буде вказано в чому проблема.
+---
+### Instalation
+To run this project just follow these steps:
+- clone the repository using the command _`git clone https://github.com/kpapura/web-market`_
+-  install the dependencies using the command _`npm install`_
+-  start the project using the command _`npm start`_
+- you will be redirected to the following address _`http://localhost:3000`_ 
