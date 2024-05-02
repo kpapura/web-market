@@ -23,7 +23,7 @@ export const ScrollToTopButton = () => {
   };
 
   window.addEventListener('scroll', toggleVisibility);
-console.log(isVisible);
+
   return (
     <>
       {isVisible && (
