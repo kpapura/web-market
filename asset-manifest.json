@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/web-market/static/css/main.b61d3529.css",
-    "main.js": "/web-market/static/js/main.356c4944.js",
+    "main.js": "/web-market/static/js/main.5958f419.js",
     "static/css/315.7441b8be.chunk.css": "/web-market/static/css/315.7441b8be.chunk.css",
-    "static/js/315.ac8d5189.chunk.js": "/web-market/static/js/315.ac8d5189.chunk.js",
-    "static/js/889.ed9ddf84.chunk.js": "/web-market/static/js/889.ed9ddf84.chunk.js",
+    "static/js/315.831526c1.chunk.js": "/web-market/static/js/315.831526c1.chunk.js",
+    "static/js/29.009ba225.chunk.js": "/web-market/static/js/29.009ba225.chunk.js",
     "static/media/Kalam-Bold.ttf": "/web-market/static/media/Kalam-Bold.c4671477e81c3c51ffc0.ttf",
     "static/media/Kalam-Light.ttf": "/web-market/static/media/Kalam-Light.26d8dba039c5c77b1ac3.ttf",
     "static/media/Kalam-Regular.ttf": "/web-market/static/media/Kalam-Regular.831aaad03890ba2d7417.ttf",
     "index.html": "/web-market/index.html",
     "main.b61d3529.css.map": "/web-market/static/css/main.b61d3529.css.map",
-    "main.356c4944.js.map": "/web-market/static/js/main.356c4944.js.map",
+    "main.5958f419.js.map": "/web-market/static/js/main.5958f419.js.map",
     "315.7441b8be.chunk.css.map": "/web-market/static/css/315.7441b8be.chunk.css.map",
-    "315.ac8d5189.chunk.js.map": "/web-market/static/js/315.ac8d5189.chunk.js.map",
-    "889.ed9ddf84.chunk.js.map": "/web-market/static/js/889.ed9ddf84.chunk.js.map"
+    "315.831526c1.chunk.js.map": "/web-market/static/js/315.831526c1.chunk.js.map",
+    "29.009ba225.chunk.js.map": "/web-market/static/js/29.009ba225.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b61d3529.css",
-    "static/js/main.356c4944.js"
+    "static/js/main.5958f419.js"
   ]
 }
