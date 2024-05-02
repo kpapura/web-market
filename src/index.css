@@ -1,10 +1,16 @@
-@import-normalize; /* bring in normalize.css styles */
+@import 'normalize.css'; /* bring in normalize.css styles */
+
+@font-face {
+  font-family: 'Kalam';
+  src: url('../src/fonts/Kalam-Light.ttf') format('ttf'),
+    url('../src/fonts/Kalam-Regular.ttf') format('ttf'),
+    url('../src/fonts/Kalam-Bold.ttf') format('ttf');
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Kalam';
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,4 +18,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.modal-open {
+  overflow: hidden;
 }
