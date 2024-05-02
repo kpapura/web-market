@@ -21,6 +21,7 @@ export const CloseButton = styled.button`
 export const ModalContent = styled.div`
   display: flex;
   position: relative;
+  overflow-y: auto;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -44,7 +45,6 @@ export const ModalContent = styled.div`
 
 export const ModalWrapper = styled.div`
   position: fixed;
-  overflow-y: auto;
   z-index: 999;
   inset: 0;
   display: flex;
