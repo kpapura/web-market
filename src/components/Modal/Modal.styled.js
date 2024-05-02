@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CloseButton = styled.button`
   position: absolute;
@@ -13,10 +13,10 @@ export const CloseButton = styled.button`
   stroke: black;
 
   @media screen and (min-width: 768px) {
-  top: 15px;
-  right: 15px;
-}  
-`
+    top: 15px;
+    right: 15px;
+  }
+`;
 
 export const ModalContent = styled.div`
   display: flex;
@@ -31,16 +31,16 @@ export const ModalContent = styled.div`
   overflow-y: auto;
 
   @media screen and (min-width: 768px) {
-  width: 500px;
-  max-height: 550px;
-  border-radius: 24px;
-  margin-top: 70px;
-}  
+    width: 500px;
+    max-height: 550px;
+    border-radius: 24px;
+    margin-top: 70px;
+  }
   @media screen and (min-width: 1280px) {
-  width: 600px;
-  max-height: 700px;
-}  
-`
+    width: 600px;
+    max-height: 700px;
+  }
+`;
 
 export const ModalWrapper = styled.div`
   position: fixed;
@@ -51,4 +51,4 @@ export const ModalWrapper = styled.div`
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(7px);
-`
+`;
